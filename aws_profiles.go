@@ -26,7 +26,7 @@ func ListAWSProfiles() ([]string, error) {
 	sections := cfg.SectionStrings()
 	profiles := make([]string, 0)
 
-	// Extract the profile names
+	// Extract the profile namesœ
 	for _, section := range sections {
 		if strings.HasPrefix(section, "profile ") {
 			profile := strings.TrimPrefix(section, "profile ")
